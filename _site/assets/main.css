@@ -147,17 +147,10 @@ p.fancy::first-letter {
   background-color: #FAA; }
 
 @keyframes left-to-right {
-  from {
-    transform: translate3d(-10%, 0, 0); }
-  to {
-    transform: translate3d(110%, 0, 0); } }
-@keyframes appear {
-  0%,
-    100% {
-    opacity: 0; }
-  1%,
-    99% {
-    opacity: 1; } }
+  0% {
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    transform: translate3d(100%, 0, 0); } }
 .clouds {
   position: absolute;
   top: 0;
@@ -171,512 +164,482 @@ p.fancy::first-letter {
   -webkit-user-select: none;
   -ms-user-select: none; }
   .clouds div:nth-child(1) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 33s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 37.7652892562s;
+    animation-duration: 39.7752066116s;
+    animation-delay: -28s;
     position: absolute;
     width: 100%;
-    top: 44%;
-    height: 41px;
-    z-index: 41;
+    top: 14%;
+    height: 39px;
+    z-index: 39;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(1) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(2) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 22s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 39.7752066116s;
+    animation-delay: -27s;
     position: absolute;
     width: 100%;
-    top: 40%;
-    height: 60px;
-    z-index: 60;
+    top: 50%;
+    height: 39px;
+    z-index: 39;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(2) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(3) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 17s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 50.5785123967s;
+    animation-duration: 39.7752066116s;
+    animation-delay: -34s;
     position: absolute;
     width: 100%;
-    top: 2%;
-    height: 35px;
-    z-index: 35;
+    top: 29%;
+    height: 39px;
+    z-index: 39;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(3) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(4) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 26s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 37.6859504132s;
+    animation-delay: -17s;
     position: absolute;
     width: 100%;
-    top: 15%;
-    height: 49px;
-    z-index: 49;
+    top: 47%;
+    height: 40px;
+    z-index: 40;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(4) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(5) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 55s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 64.7669421488s;
+    animation-delay: -35s;
     position: absolute;
     width: 100%;
-    top: 51%;
-    height: 50px;
-    z-index: 50;
+    top: 35%;
+    height: 24px;
+    z-index: 24;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(5) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(6) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 50s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 61.3685950413s;
+    animation-duration: 39.7752066116s;
+    animation-delay: -14s;
     position: absolute;
     width: 100%;
-    top: 31%;
-    height: 29px;
-    z-index: 29;
+    top: 23%;
+    height: 39px;
+    z-index: 39;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(6) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(7) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 35s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 32s;
+    animation-delay: -29s;
     position: absolute;
     width: 100%;
-    top: 57%;
-    height: 60px;
-    z-index: 60;
+    top: 20%;
+    height: 61px;
+    z-index: 61;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(7) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(8) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 21s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 60.720661157s;
+    animation-delay: -17s;
     position: absolute;
     width: 100%;
-    top: 26%;
-    height: 55px;
-    z-index: 55;
+    top: 43%;
+    height: 27px;
+    z-index: 27;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(8) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(9) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 24s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 35.5438016529s;
+    animation-delay: -28s;
     position: absolute;
     width: 100%;
-    top: 50%;
-    height: 58px;
-    z-index: 58;
+    top: 16%;
+    height: 41px;
+    z-index: 41;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(9) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(10) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 39s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 59.2661157025s;
+    animation-delay: -1s;
     position: absolute;
     width: 100%;
-    top: 40%;
-    height: 61px;
-    z-index: 61;
+    top: 37%;
+    height: 28px;
+    z-index: 28;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(10) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(11) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 52s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 40.041322314s;
+    animation-duration: 71.4314049587s;
+    animation-delay: -39s;
     position: absolute;
     width: 100%;
-    top: 45%;
-    height: 40px;
-    z-index: 40;
+    top: 7%;
+    height: 18px;
+    z-index: 18;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(11) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(12) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 45s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 32s;
+    animation-delay: -39s;
     position: absolute;
     width: 100%;
-    top: 47%;
-    height: 44px;
-    z-index: 44;
+    top: 14%;
+    height: 54px;
+    z-index: 54;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(12) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(13) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 17s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 32s;
+    animation-delay: -32s;
     position: absolute;
     width: 100%;
-    top: 59%;
-    height: 49px;
-    z-index: 49;
+    top: 29%;
+    height: 54px;
+    z-index: 54;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(13) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(14) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 25s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 59.2661157025s;
+    animation-delay: -15s;
     position: absolute;
     width: 100%;
-    top: 4%;
-    height: 65px;
-    z-index: 65;
+    top: 21%;
+    height: 28px;
+    z-index: 28;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(14) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(15) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 26s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 70.1355371901s;
+    animation-duration: 57.758677686s;
+    animation-delay: -27s;
     position: absolute;
     width: 100%;
-    top: 12%;
-    height: 23px;
-    z-index: 23;
+    top: 28%;
+    height: 29px;
+    z-index: 29;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(15) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(16) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 49s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 51.2s;
+    animation-delay: -37s;
     position: absolute;
     width: 100%;
-    top: 17%;
-    height: 44px;
-    z-index: 44;
+    top: 22%;
+    height: 33px;
+    z-index: 33;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(16) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(17) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 33s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 57.9966942149s;
+    animation-duration: 68.3371900826s;
+    animation-delay: -37s;
     position: absolute;
     width: 100%;
-    top: 19%;
-    height: 31px;
-    z-index: 31;
+    top: 2%;
+    height: 21px;
+    z-index: 21;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(17) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(18) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 53s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 68.3371900826s;
+    animation-delay: -17s;
     position: absolute;
     width: 100%;
-    top: 33%;
-    height: 55px;
-    z-index: 55;
+    top: 42%;
+    height: 21px;
+    z-index: 21;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(18) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(19) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 40s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 72.6082644628s;
+    animation-duration: 43.7950413223s;
+    animation-delay: -24s;
     position: absolute;
     width: 100%;
-    top: 32%;
-    height: 21px;
-    z-index: 21;
+    top: 40%;
+    height: 37px;
+    z-index: 37;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(19) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(20) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 16s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 59.7107438017s;
+    animation-duration: 68.3371900826s;
+    animation-delay: -19s;
     position: absolute;
     width: 100%;
-    top: 51%;
-    height: 30px;
-    z-index: 30;
+    top: 16%;
+    height: 21px;
+    z-index: 21;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(20) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(21) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 50s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 57.758677686s;
+    animation-delay: -1s;
     position: absolute;
     width: 100%;
-    top: 59%;
-    height: 50px;
-    z-index: 50;
+    top: 50%;
+    height: 29px;
+    z-index: 29;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(21) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(22) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 16s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 59.7107438017s;
+    animation-duration: 59.2661157025s;
+    animation-delay: -11s;
     position: absolute;
     width: 100%;
-    top: 17%;
-    height: 30px;
-    z-index: 30;
+    top: 38%;
+    height: 28px;
+    z-index: 28;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(22) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(23) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 29s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 66.0099173554s;
+    animation-delay: -17s;
     position: absolute;
     width: 100%;
-    top: 49%;
-    height: 62px;
-    z-index: 62;
+    top: 36%;
+    height: 23px;
+    z-index: 23;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(23) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(24) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 3s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 35.4330578512s;
+    animation-duration: 70.452892562s;
+    animation-delay: -28s;
     position: absolute;
     width: 100%;
-    top: 17%;
-    height: 42px;
-    z-index: 42;
+    top: 59%;
+    height: 19px;
+    z-index: 19;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(24) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(25) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 46s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 32s;
+    animation-delay: -26s;
     position: absolute;
     width: 100%;
-    top: 44%;
-    height: 50px;
-    z-index: 50;
+    top: 8%;
+    height: 47px;
+    z-index: 47;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(25) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(26) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 43.7950413223s;
+    animation-delay: -28s;
     position: absolute;
     width: 100%;
-    top: 9%;
-    height: 63px;
-    z-index: 63;
+    top: 28%;
+    height: 37px;
+    z-index: 37;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(26) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(27) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 51s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 71.4314049587s;
+    animation-delay: -35s;
+    position: absolute;
+    width: 100%;
+    top: 13%;
+    height: 18px;
+    z-index: 18;
+    color: gray;
+    opacity: 1; }
+    .clouds div:nth-child(27) svg {
+      height: 100%;
+      width: auto !important; }
+  .clouds div:nth-child(28) {
+    animation-name: left-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 32s;
+    animation-delay: -2s;
     position: absolute;
     width: 100%;
     top: 20%;
     height: 46px;
     z-index: 46;
     color: gray;
-    opacity: 0; }
-    .clouds div:nth-child(27) svg {
-      height: 100%;
-      width: auto !important; }
-  .clouds div:nth-child(28) {
-    animation-name: left-to-right, appear;
-    animation-iteration-count: infinite;
-    animation-delay: 26s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
-    position: absolute;
-    width: 100%;
-    top: 32%;
-    height: 58px;
-    z-index: 58;
-    color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(28) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(29) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 14s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 34s;
+    animation-duration: 52.9190082645s;
+    animation-delay: -2s;
     position: absolute;
     width: 100%;
-    top: 54%;
-    height: 48px;
-    z-index: 48;
+    top: 40%;
+    height: 32px;
+    z-index: 32;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(29) svg {
       height: 100%;
       width: auto !important; }
   .clouds div:nth-child(30) {
-    animation-name: left-to-right, appear;
+    animation-name: left-to-right;
     animation-iteration-count: infinite;
-    animation-delay: 54s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 70.1355371901s;
+    animation-duration: 32s;
+    animation-delay: -3s;
     position: absolute;
     width: 100%;
-    top: 10%;
-    height: 23px;
-    z-index: 23;
+    top: 47%;
+    height: 52px;
+    z-index: 52;
     color: gray;
-    opacity: 0; }
+    opacity: 1; }
     .clouds div:nth-child(30) svg {
       height: 100%;
       width: auto !important; }
