@@ -44,12 +44,12 @@
 	    animation-delay: 1s * $delay;
 	    animation-timing-function: linear;
 	    animation-fill-mode: forwards;
-	    animation-duration: 65s * max(1 - ($height / 55) * ($height / 55), 0.4); 
+	    animation-duration: 85s * max(1 - ($height / 55) * ($height / 55), 0.4);
 
 	    position: absolute;
 	    width: 100%;
 	    
-	    top: 10% + random(80);
+	    top: 1% * max(2, random(60));
 	    height: 1px * $height;
 
 	    z-index: $height;
