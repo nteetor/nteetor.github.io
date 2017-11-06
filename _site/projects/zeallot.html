@@ -1,0 +1,86 @@
+<head>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script defer src="/assets/font-awesome/js/packs/solid.min.js"></script>
+  <script defer src="/assets/font-awesome/js/packs/light.min.js"></script>
+  <script defer src="/assets/font-awesome/js/packs/regular.min.js"></script>
+  <script defer src="/assets/font-awesome/js/packs/brands.min.js"></script>
+  <script defer src="/assets/font-awesome/js/fontawesome.min.js"></script>
+  
+  <!-- google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109099576-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109099576-1');
+  </script>
+
+  <!-- custom css -->
+  <link href="/assets/main.css" rel="stylesheet">
+</head>
+
+
+<body class="container-fluid">
+  <div class="w-100 d-flex">
+  <div class="w-75 mx-auto">
+    <div class="sticky-top bg-white mb-5">
+      <h2 id="zeallot">zeallot</h2>
+
+
+    </div>
+
+    <p class="fancy">You made the jump from Python to R, you’re ready to hit the code running, but
+you’re missing a treasured Python feature, multiple assignment. Time to try
+zeallot.</p>
+
+<p>The zeallot R package provides an operator for unpacking, destructuring, and
+multiple assignment.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">zeallot</span><span class="p">)</span><span class="w">
+</span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>In this first example the variables <code class="highlighter-rouge">a</code> and <code class="highlighter-rouge">b</code> are assigned in the calling
+environment and assigned, respectively, the values 1 and 2. Due to R’s syntax
+constraints usage of <code class="highlighter-rouge">c()</code> is necessary on an assignment expression’s left-hand
+side.</p>
+
+<p>The left-hand side of an assignment expression includes the variables listed
+left of the <code class="highlighter-rouge">%&lt;-%</code> operator. The right-hand side of an assignment expression
+includes the values listed right of the <code class="highlighter-rouge">%&lt;-%</code> operator.</p>
+
+<p>Left-hand side values are evaluated prior to assignment making the following
+possible.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You may often find your right-hand side has more than 2 values.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Or you may want to skip a value or many values. You can skip a value by position
+with <code class="highlighter-rouge">.</code> or skip many values with <code class="highlighter-rouge">...</code>.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">.</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3030</span><span class="p">)</span><span class="w">
+</span><span class="nf">c</span><span class="p">(</span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="w">
+</span></code></pre></div></div>
+
+
+    
+  </div>
+</div>
+
+</body>
