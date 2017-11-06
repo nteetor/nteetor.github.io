@@ -1,0 +1,66 @@
+@keyframes left-to-right {
+    from {
+	transform: translate3d(-10%, 0, 0);
+    }
+
+    to {
+	transform: translate3d(110%, 0, 0);
+    }
+}
+
+@keyframes appear {
+    0%,
+    100% {
+	opacity: 0;
+    }
+
+    1%,
+    99% {
+	opacity: 1;
+    }
+}
+    
+.clouds {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    height: 40%;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    @for $i from 1 through 30 {
+	$height: 15 + random(50);
+	$delay: random(55);
+	
+	div:nth-child(#{$i}) {
+	    animation-name: left-to-right, appear;
+	    animation-iteration-count: infinite;
+	    animation-delay: 1s * $delay;
+	    animation-timing-function: linear;
+	    animation-fill-mode: forwards;
+	    animation-duration: 65s * max(1 - ($height / 55) * ($height / 55), 0.4); 
+
+	    position: absolute;
+	    width: 100%;
+	    
+	    top: 10% + random(80);
+	    height: 1px * $height;
+
+	    z-index: $height;
+
+	    color: gray;
+	    opacity: 0;
+
+	    svg {
+		height: 100%;
+		width: auto !important;
+	    }
+	}
+    }
+}

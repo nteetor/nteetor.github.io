@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="w-100 d-flex">
+  <div class="w-75 mx-auto">
+    <div class="sticky-top bg-white mb-5">
+      {{ page.excerpt }}
+    </div>
+
+    {{ content | remove: page.excerpt }}
+    
+  </div>
+</div>
