@@ -163,17 +163,20 @@ p.fancy::first-letter {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
+  @media (max-height: 620px) {
+    .clouds {
+      display: none; } }
   .clouds div:nth-child(1) {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -8s;
+    animation-duration: 68.3371900826s;
+    animation-delay: -3s;
     position: absolute;
     width: 100%;
-    top: 49%;
-    height: 50px;
-    z-index: 50;
+    top: 48%;
+    height: 21px;
+    z-index: 21;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(1) svg {
@@ -183,13 +186,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 73.2297520661s;
-    animation-delay: -20s;
+    animation-duration: 43.7950413223s;
+    animation-delay: -10s;
     position: absolute;
     width: 100%;
-    top: 39%;
-    height: 16px;
-    z-index: 16;
+    top: 9%;
+    height: 37px;
+    z-index: 37;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(2) svg {
@@ -199,13 +202,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 63.4710743802s;
-    animation-delay: -10s;
+    animation-duration: 32s;
+    animation-delay: -9s;
     position: absolute;
     width: 100%;
-    top: 57%;
-    height: 25px;
-    z-index: 25;
+    top: 58%;
+    height: 56px;
+    z-index: 56;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(3) svg {
@@ -216,10 +219,10 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 54.5851239669s;
-    animation-delay: -35s;
+    animation-delay: -16s;
     position: absolute;
     width: 100%;
-    top: 25%;
+    top: 53%;
     height: 31px;
     z-index: 31;
     color: gray;
@@ -231,13 +234,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -4s;
+    animation-duration: 69.4214876033s;
+    animation-delay: -39s;
     position: absolute;
     width: 100%;
-    top: 36%;
-    height: 57px;
-    z-index: 57;
+    top: 6%;
+    height: 20px;
+    z-index: 20;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(5) svg {
@@ -247,13 +250,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -33s;
+    animation-duration: 37.6859504132s;
+    animation-delay: -27s;
     position: absolute;
     width: 100%;
-    top: 27%;
-    height: 58px;
-    z-index: 58;
+    top: 13%;
+    height: 40px;
+    z-index: 40;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(6) svg {
@@ -264,12 +267,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -4s;
+    animation-delay: -23s;
     position: absolute;
     width: 100%;
-    top: 54%;
-    height: 65px;
-    z-index: 65;
+    top: 52%;
+    height: 61px;
+    z-index: 61;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(7) svg {
@@ -280,12 +283,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -2s;
+    animation-delay: -21s;
     position: absolute;
     width: 100%;
-    top: 49%;
-    height: 46px;
-    z-index: 46;
+    top: 53%;
+    height: 61px;
+    z-index: 61;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(8) svg {
@@ -295,13 +298,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -27s;
+    animation-duration: 57.758677686s;
+    animation-delay: -33s;
     position: absolute;
     width: 100%;
-    top: 16%;
-    height: 44px;
-    z-index: 44;
+    top: 2%;
+    height: 29px;
+    z-index: 29;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(9) svg {
@@ -311,13 +314,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -24s;
+    animation-duration: 67.2s;
+    animation-delay: -40s;
     position: absolute;
     width: 100%;
-    top: 32%;
-    height: 58px;
-    z-index: 58;
+    top: 60%;
+    height: 22px;
+    z-index: 22;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(10) svg {
@@ -327,13 +330,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -34s;
+    animation-duration: 45.7256198347s;
+    animation-delay: -35s;
     position: absolute;
     width: 100%;
-    top: 9%;
-    height: 53px;
-    z-index: 53;
+    top: 15%;
+    height: 36px;
+    z-index: 36;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(11) svg {
@@ -343,13 +346,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 71.4314049587s;
+    animation-duration: 32s;
     animation-delay: -14s;
     position: absolute;
     width: 100%;
-    top: 7%;
-    height: 18px;
-    z-index: 18;
+    top: 47%;
+    height: 43px;
+    z-index: 43;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(12) svg {
@@ -359,13 +362,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 67.2s;
-    animation-delay: -30s;
+    animation-duration: 43.7950413223s;
+    animation-delay: -19s;
     position: absolute;
     width: 100%;
-    top: 29%;
-    height: 22px;
-    z-index: 22;
+    top: 59%;
+    height: 37px;
+    z-index: 37;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(13) svg {
@@ -375,13 +378,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 33.3487603306s;
-    animation-delay: -22s;
+    animation-duration: 32s;
+    animation-delay: -4s;
     position: absolute;
     width: 100%;
-    top: 14%;
-    height: 42px;
-    z-index: 42;
+    top: 34%;
+    height: 50px;
+    z-index: 50;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(14) svg {
@@ -391,13 +394,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 33.3487603306s;
-    animation-delay: -11s;
+    animation-duration: 54.5851239669s;
+    animation-delay: -24s;
     position: absolute;
     width: 100%;
-    top: 16%;
-    height: 42px;
-    z-index: 42;
+    top: 37%;
+    height: 31px;
+    z-index: 31;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(15) svg {
@@ -408,12 +411,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -34s;
+    animation-delay: -35s;
     position: absolute;
     width: 100%;
-    top: 30%;
-    height: 57px;
-    z-index: 57;
+    top: 8%;
+    height: 44px;
+    z-index: 44;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(16) svg {
@@ -423,13 +426,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 68.3371900826s;
-    animation-delay: -27s;
+    animation-duration: 33.3487603306s;
+    animation-delay: -26s;
     position: absolute;
     width: 100%;
-    top: 16%;
-    height: 21px;
-    z-index: 21;
+    top: 45%;
+    height: 42px;
+    z-index: 42;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(17) svg {
@@ -439,13 +442,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 45.7256198347s;
-    animation-delay: -11s;
+    animation-duration: 73.2297520661s;
+    animation-delay: -4s;
     position: absolute;
     width: 100%;
-    top: 2%;
-    height: 36px;
-    z-index: 36;
+    top: 7%;
+    height: 16px;
+    z-index: 16;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(18) svg {
@@ -455,13 +458,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 43.7950413223s;
-    animation-delay: -7s;
+    animation-duration: 52.9190082645s;
+    animation-delay: -11s;
     position: absolute;
     width: 100%;
-    top: 60%;
-    height: 37px;
-    z-index: 37;
+    top: 12%;
+    height: 32px;
+    z-index: 32;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(19) svg {
@@ -471,13 +474,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 37.6859504132s;
-    animation-delay: -4s;
+    animation-duration: 54.5851239669s;
+    animation-delay: -1s;
     position: absolute;
     width: 100%;
-    top: 14%;
-    height: 40px;
-    z-index: 40;
+    top: 52%;
+    height: 31px;
+    z-index: 31;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(20) svg {
@@ -488,12 +491,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -8s;
+    animation-delay: -3s;
     position: absolute;
     width: 100%;
-    top: 38%;
-    height: 47px;
-    z-index: 47;
+    top: 20%;
+    height: 59px;
+    z-index: 59;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(21) svg {
@@ -503,13 +506,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 32s;
-    animation-delay: -27s;
+    animation-duration: 57.758677686s;
+    animation-delay: -18s;
     position: absolute;
     width: 100%;
-    top: 36%;
-    height: 46px;
-    z-index: 46;
+    top: 3%;
+    height: 29px;
+    z-index: 29;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(22) svg {
@@ -519,13 +522,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 37.6859504132s;
-    animation-delay: -5s;
+    animation-duration: 73.2297520661s;
+    animation-delay: -17s;
     position: absolute;
     width: 100%;
-    top: 26%;
-    height: 40px;
-    z-index: 40;
+    top: 52%;
+    height: 16px;
+    z-index: 16;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(23) svg {
@@ -536,12 +539,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -1s;
+    animation-delay: -3s;
     position: absolute;
     width: 100%;
-    top: 8%;
-    height: 56px;
-    z-index: 56;
+    top: 37%;
+    height: 50px;
+    z-index: 50;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(24) svg {
@@ -551,13 +554,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 51.2s;
-    animation-delay: -36s;
+    animation-duration: 32s;
+    animation-delay: -20s;
     position: absolute;
     width: 100%;
-    top: 56%;
-    height: 33px;
-    z-index: 33;
+    top: 39%;
+    height: 45px;
+    z-index: 45;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(25) svg {
@@ -568,12 +571,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -33s;
+    animation-delay: -12s;
     position: absolute;
     width: 100%;
-    top: 9%;
-    height: 62px;
-    z-index: 62;
+    top: 60%;
+    height: 61px;
+    z-index: 61;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(26) svg {
@@ -583,13 +586,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 39.7752066116s;
-    animation-delay: -14s;
+    animation-duration: 32s;
+    animation-delay: -28s;
     position: absolute;
     width: 100%;
-    top: 35%;
-    height: 39px;
-    z-index: 39;
+    top: 12%;
+    height: 56px;
+    z-index: 56;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(27) svg {
@@ -599,13 +602,13 @@ p.fancy::first-letter {
     animation-name: left-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 51.2s;
-    animation-delay: -31s;
+    animation-duration: 32s;
+    animation-delay: -29s;
     position: absolute;
     width: 100%;
-    top: 31%;
-    height: 33px;
-    z-index: 33;
+    top: 6%;
+    height: 47px;
+    z-index: 47;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(28) svg {
@@ -616,12 +619,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -33s;
+    animation-delay: -30s;
     position: absolute;
     width: 100%;
-    top: 51%;
-    height: 45px;
-    z-index: 45;
+    top: 56%;
+    height: 64px;
+    z-index: 64;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(29) svg {
@@ -632,12 +635,12 @@ p.fancy::first-letter {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 32s;
-    animation-delay: -35s;
+    animation-delay: -9s;
     position: absolute;
     width: 100%;
-    top: 3%;
-    height: 45px;
-    z-index: 45;
+    top: 28%;
+    height: 59px;
+    z-index: 59;
     color: gray;
     opacity: 1; }
     .clouds div:nth-child(30) svg {
