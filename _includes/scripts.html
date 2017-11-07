@@ -1,0 +1,10 @@
+<script>
+ $(document).ready(function() {
+     if ($(".clouds").length != 0) {
+	 $(".clouds").children("div").map(function(i, e) {
+	     let delay = (-1 * Math.floor(Math.random() * 60)) + "s";
+	     $(e).css("animation-delay", delay);
+	 });
+     }
+ });
+</script>
