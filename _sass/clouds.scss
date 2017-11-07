@@ -31,12 +31,15 @@
     @for $i from 1 through 30 {
 	$height: 15 + random(50);
 	$delay: random(55);
+
+	$max-duration: 120s;
+	$min-duration: ($max-duration / 3) + random(10);
 	
 	div:nth-child(#{$i}) {
 	    animation-name: left-to-right;
 	    animation-iteration-count: infinite;
 	    animation-timing-function: linear;
-	    animation-duration: 80s * max(1 - ($height / 55) * ($height / 55), 0.4);
+	    animation-duration: max($max-duration * (1 - ($height / 55) * ($height / 55)), $min-duration);
 	    animation-delay: -1s * random(40);
 
 	    position: absolute;

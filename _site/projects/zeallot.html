@@ -1,4 +1,10 @@
 <head>
+  <title>
+    teetor'n
+  </title>
+
+  <meta name="description" content="The blog of one Nathan Teetor.">
+  
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   
@@ -65,8 +71,8 @@ multiple assignment.</p>
 
 <p>In this first example the variables <code class="highlighter-rouge">a</code> and <code class="highlighter-rouge">b</code> are assigned in the calling
 environment and assigned, respectively, the values 1 and 2. Due to R’s syntax
-constraints usage of <code class="highlighter-rouge">c()</code> is necessary on an assignment expression’s left-hand
-side.</p>
+constraints the usage of <code class="highlighter-rouge">c()</code> on the left-hand side of the expression is
+necessary.</p>
 
 <p>The left-hand side of an assignment expression includes the variables listed
 left of the <code class="highlighter-rouge">%&lt;-%</code> operator. The right-hand side of an assignment expression
@@ -90,6 +96,35 @@ with <code class="highlighter-rouge">.</code> or skip many values with <code cla
 </span><span class="nf">c</span><span class="p">(</span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="w">
 </span></code></pre></div></div>
 
+<p>After running the first line, <code class="highlighter-rouge">a</code> is assigned 1 and the value 3030 is
+ignored. After running the second line, the values 1 through 9 are ignored and
+<code class="highlighter-rouge">z</code> is assigned 10.</p>
+
+<p>More often you will be assigning the result of a function call.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">simple</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="n">simple</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Certain functions do not always return the same number of values. <code class="highlighter-rouge">head()</code> or
+<code class="highlighter-rouge">tail()</code> for example may return a fewer number of items than requested.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="n">tail</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">  </span><span class="c1"># whoops!</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If you run the above example you will get an error. <code class="highlighter-rouge">nums</code> only has a single value,
+so despite asking <code class="highlighter-rouge">tail()</code> for 2 values we only got 1. In situations like this you
+can assign a default value.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-1</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="n">tail</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Now there is no error and <code class="highlighter-rouge">b</code> is assigned -1.</p>
 
     
   </div>

@@ -17,8 +17,8 @@ c(a, b) %<-% c(1, 2)
 
 In this first example the variables `a` and `b` are assigned in the calling
 environment and assigned, respectively, the values 1 and 2. Due to R's syntax
-constraints usage of `c()` is necessary on an assignment expression's left-hand
-side.
+constraints the usage of `c()` on the left-hand side of the expression is
+necessary.
 
 The left-hand side of an assignment expression includes the variables listed
 left of the `%<-%` operator. The right-hand side of an assignment expression
@@ -45,4 +45,35 @@ c(a, .) %<-% c(1, 3030)
 c(..., z) %<-% 1:10
 ```
 
+After running the first line, `a` is assigned 1 and the value 3030 is
+ignored. After running the second line, the values 1 through 9 are ignored and
+`z` is assigned 10.
 
+More often you will be assigning the result of a function call.
+
+```R
+simple <- function() {
+  c(1, 2, 3)
+}
+
+c(a, b, d) %<-% simple()
+```
+
+Certain functions do not always return the same number of values. `head()` or
+`tail()` for example may return a fewer number of items than requested.
+
+```R
+nums <- 1
+c(a, b) %<-% tail(nums, 2)  # whoops!
+```
+
+If you run the above example you will get an error. `nums` only has a single value,
+so despite asking `tail()` for 2 values we only got 1. In situations like this you
+can assign a default value.
+
+```R
+nums <- 1
+c(a, b = -1) %<-% tail(nums, 2)
+```
+
+Now there is no error and `b` is assigned -1.
