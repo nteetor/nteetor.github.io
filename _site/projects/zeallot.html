@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro|Source+Code+Pro:200,300,500,700" rel="stylesheet">
 
   <!-- font awesome -->
   <script defer src="/assets/font-awesome/js/packs/solid.min.js"></script>
@@ -116,15 +116,39 @@ ignored. After running the second line, the values 1 through 9 are ignored and
 </span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="n">tail</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">  </span><span class="c1"># whoops!</span><span class="w">
 </span></code></pre></div></div>
 
-<p>If you run the above example you will get an error. <code class="highlighter-rouge">nums</code> only has a single value,
-so despite asking <code class="highlighter-rouge">tail()</code> for 2 values we only got 1. In situations like this you
-can assign a default value.</p>
+<p>If you run the above example you will get an error. <code class="highlighter-rouge">nums</code> is only a single
+value, so despite asking <code class="highlighter-rouge">tail()</code> for 2 values we only get the 1. In situations
+like this you can make use of a default value.</p>
 
 <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-1</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="n">tail</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Now there is no error and <code class="highlighter-rouge">b</code> is assigned -1.</p>
+<p>Now there is no error, <code class="highlighter-rouge">b</code> is assigned -1, the default value.</p>
+
+<p>Let’s deviate back to skipping values and now collecting values. We saw above
+<code class="highlighter-rouge">.</code> and <code class="highlighter-rouge">...</code> may be used to skip values. You can also use <code class="highlighter-rouge">...</code> to collect
+values. Instead of using stand-alone <code class="highlighter-rouge">...</code>, use the triple dots as a variable
+name prefix.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">c</span><span class="p">(</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">...others</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="nb">LETTERS</span><span class="w">
+</span></code></pre></div></div>
+
+<p>After running the above example a variable <code class="highlighter-rouge">others</code> is assigned a vector of
+letters “B” through “Z”. <code class="highlighter-rouge">first</code> is assigned “A”. Maybe you want the final value
+as well.</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">c</span><span class="p">(</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">...others</span><span class="p">,</span><span class="w"> </span><span class="n">final</span><span class="p">)</span><span class="w"> </span><span class="o">%&lt;-%</span><span class="w"> </span><span class="nb">LETTERS</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Now <code class="highlighter-rouge">others</code> is a vector of values “B” through “Y” and <code class="highlighter-rouge">final</code> is assigned “Z”.
+When using collector variables you may specify any number of other variables,
+the collector variable will absorb only the excess values.</p>
+
+<p>And that’s about it! If you are coming from a programming language which natively 
+supports multiple assignment and zeallot is missing a beloved feature please let
+me know. I am always looking to make the package better. In the meantime, happy
+assigning.</p>
 
     
   </div>

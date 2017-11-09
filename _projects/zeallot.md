@@ -67,13 +67,39 @@ nums <- 1
 c(a, b) %<-% tail(nums, 2)  # whoops!
 ```
 
-If you run the above example you will get an error. `nums` only has a single value,
-so despite asking `tail()` for 2 values we only got 1. In situations like this you
-can assign a default value.
+If you run the above example you will get an error. `nums` is only a single
+value, so despite asking `tail()` for 2 values we only get the 1. In situations
+like this you can make use of a default value.
 
 ```R
 nums <- 1
 c(a, b = -1) %<-% tail(nums, 2)
 ```
 
-Now there is no error and `b` is assigned -1.
+Now there is no error, `b` is assigned -1, the default value. 
+
+Let's deviate back to skipping values and now collecting values. We saw above
+`.` and `...` may be used to skip values. You can also use `...` to collect
+values. Instead of using stand-alone `...`, use the triple dots as a variable
+name prefix.
+
+```R
+c(first, ...others) %<-% LETTERS
+```
+
+After running the above example a variable `others` is assigned a vector of
+letters "B" through "Z". `first` is assigned "A". Maybe you want the final value
+as well.
+
+```R
+c(first, ...others, final) %<-% LETTERS
+```
+
+Now `others` is a vector of values "B" through "Y" and `final` is assigned "Z".
+When using collector variables you may specify any number of other variables,
+the collector variable will absorb only the excess values. 
+
+And that's about it! If you are coming from a programming language which natively 
+supports multiple assignment and zeallot is missing a beloved feature please let
+me know. I am always looking to make the package better. In the meantime, happy
+assigning.
