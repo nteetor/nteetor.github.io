@@ -4,61 +4,41 @@
   </title>
 
   <meta name="description" content="The blog of one Nathan Teetor.">
-  
+
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+          integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+          crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+          integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+          crossorigin="anonymous">
+  </script>
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro|Source+Code+Pro:200,300,500,700" rel="stylesheet">
 
-  <!-- font awesome -->
-  <script defer src="/assets/font-awesome/js/packs/solid.min.js"></script>
-  <script defer src="/assets/font-awesome/js/packs/light.min.js"></script>
-  <script defer src="/assets/font-awesome/js/packs/regular.min.js"></script>
-  <script defer src="/assets/font-awesome/js/packs/brands.min.js"></script>
-  <script defer src="/assets/font-awesome/js/fontawesome.min.js"></script>
-  
-  <!-- google analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109099576-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-109099576-1');
-  </script>
-
   <!-- custom css -->
   <link href="/assets/main.css" rel="stylesheet">
-
-  <script>
- $(document).ready(function() {
-     if ($(".clouds").length != 0) {
-	 $(".clouds div").map(function(i, e) {
-	     let delay = (-1 * Math.floor(Math.random() * 60)) + "s";
-	     $(e).css("animation-delay", delay);
-	 });
-     }
- });
-</script>
 
 </head>
 
 
 <body class="container-fluid">
-  <div class="w-100 d-flex">
-  <div class="w-75 mx-auto">
-    <div class="sticky-top bg-white mb-5">
-      <h2 id="zeallot">zeallot</h2>
+  <div class="row">
+  <div class="col col-sm-8 mt-4 mx-auto">
 
+    <h2 class="mb-3 border-bottom border-dark" id="zeallot">zeallot</h2>
 
-    </div>
-
-    <p class="fancy">You made the jump from Python to R, you’re ready to hit the code running, but
+<p class="fancy">You made the jump from Python to R, you’re ready to hit the code running, but
 you’re missing a treasured Python feature, multiple assignment. Time to try
 zeallot.</p>
 
@@ -145,12 +125,12 @@ as well.</p>
 When using collector variables you may specify any number of other variables,
 the collector variable will absorb only the excess values.</p>
 
-<p>And that’s about it! If you are coming from a programming language which natively 
+<p>And that’s about it! If you are coming from a programming language which natively
 supports multiple assignment and zeallot is missing a beloved feature please let
 me know. I am always looking to make the package better. In the meantime, happy
 assigning.</p>
 
-    
+
   </div>
 </div>
 
