@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-<div class="w-100 d-flex">
-  <div class="w-75 mx-auto">
-    <div class="sticky-top bg-white mb-5">
-      {{ page.excerpt }}
-    </div>
+<div class="row">
+  <div class="col col-sm-8 mt-4 mx-auto">
 
-    {{ content | remove: page.excerpt }}
-    
+    {{ content }}
+
   </div>
 </div>

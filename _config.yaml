@@ -1,0 +1,14 @@
+# site variables ----
+title: ?nteetor
+email: nathanteetor@gmail.com
+description: >-
+  The blog of the one and only Nathan Teetor.
+baseurl: ""
+url: ""
+
+# build settings ----
+markdown: kramdown
+
+# exclude ----
+exclude:
+  - README.md

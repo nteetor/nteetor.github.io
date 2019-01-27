@@ -1,6 +1,8 @@
 ---
+layout: project
 ---
 ## zeallot
+{: class="mb-3 border-bottom border-dark" }
 
 You made the jump from Python to R, you're ready to hit the code running, but
 you're missing a treasured Python feature, multiple assignment. Time to try
@@ -25,13 +27,13 @@ left of the `%<-%` operator. The right-hand side of an assignment expression
 includes the values listed right of the `%<-%` operator.
 
 Left-hand side values are evaluated prior to assignment making the following
-possible. 
+possible.
 
 ```R
 c(a, b) %<-% c(b, a)
 ```
 
-You may often find your right-hand side has more than 2 values. 
+You may often find your right-hand side has more than 2 values.
 
 ```R
 c(a, b, d, e, f) %<-% list(1, 2, 3, 4, 5)
@@ -76,7 +78,7 @@ nums <- 1
 c(a, b = -1) %<-% tail(nums, 2)
 ```
 
-Now there is no error, `b` is assigned -1, the default value. 
+Now there is no error, `b` is assigned -1, the default value.
 
 Let's deviate back to skipping values and now collecting values. We saw above
 `.` and `...` may be used to skip values. You can also use `...` to collect
@@ -97,9 +99,9 @@ c(first, ...others, final) %<-% LETTERS
 
 Now `others` is a vector of values "B" through "Y" and `final` is assigned "Z".
 When using collector variables you may specify any number of other variables,
-the collector variable will absorb only the excess values. 
+the collector variable will absorb only the excess values.
 
-And that's about it! If you are coming from a programming language which natively 
+And that's about it! If you are coming from a programming language which natively
 supports multiple assignment and zeallot is missing a beloved feature please let
 me know. I am always looking to make the package better. In the meantime, happy
 assigning.
